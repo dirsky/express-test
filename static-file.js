@@ -12,3 +12,5 @@ app.use(express.static('public'))
 app.use('/static', express.static(path.join(__dirname, 'public')))
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+// 调用方式：http://localhost:3003/static/frank.txt

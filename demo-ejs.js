@@ -6,11 +6,11 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 
-app.get('/e', function (req, res) {
+app.get('/', function (req, res) {
   res.render('home.ejs',{name: 'frank'});
 });
 
-app.get('/e2/:id', function (req, res) {
+app.get('/e/:id', function (req, res) {
   res.render('home.ejs',{name: req.params['id']});
 });
 
