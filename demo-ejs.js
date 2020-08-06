@@ -14,4 +14,5 @@ app.get('/e/:id', function (req, res) {
   res.render('home.ejs',{name: req.params['id']});
 });
 
-app.listen(3001);
+const port = 3001
+app.listen(port, () => console.log(`app listening on port ${port}!`))
