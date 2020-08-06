@@ -9,15 +9,6 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/c', function (req, res) {
-  res.status(200);
-  res.json({
-    python: 20,
-    nodejs: 1,
-    others: 10
-  });
-});
-
 app.get('/d', (req, res) => {
   res.status(200);
   res.json({
@@ -60,4 +51,5 @@ app.get('/p', (req, res) => {
   res.status(200).send('<h1>hello plain-text</h1>');
 });
 
-app.listen(3000)
+const port = 3000
+app.listen(port, () => console.log(`App listening on port ${port}!`))
