@@ -1,7 +1,6 @@
 const express = require('express')
-const path = require('path');
 const app = express()
-const port = 3003
+const path = require('path');
 
 app.use(express.static('public'))
 
@@ -11,6 +10,7 @@ app.use(express.static('public'))
 // If you run the express app from another directory, it’s safer to use the absolute path of the directory that you want to serve:
 app.use('/static', express.static(path.join(__dirname, 'public')))
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+const port = 3003
+app.listen(port, () => console.log(`App listening on port ${port}!`))
 
 // 调用方式：http://localhost:3003/static/frank.txt

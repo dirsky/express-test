@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const port = 3002
 
 app.get('/user', function (req, res) {
   res.send('Hello user!')
@@ -18,4 +17,5 @@ app.delete('/user', function (req, res) {
   res.send('Got a DELETE request at /user')
 })
 
-app.listen(port, () => console.log(`user app listening on port ${port}!`))
+const port = 3002
+app.listen(port, () => console.log(`App listening on port ${port}!`))

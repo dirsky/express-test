@@ -15,4 +15,4 @@ app.get('/e/:id', function (req, res) {
 });
 
 const port = 3001
-app.listen(port, () => console.log(`app listening on port ${port}!`))
+app.listen(port, () => console.log(`App listening on port ${port}!`))
