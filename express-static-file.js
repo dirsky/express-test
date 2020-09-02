@@ -14,3 +14,4 @@ const port = 3003
 app.listen(port, () => console.log(`App listening on port ${port}!`))
 
 // 调用方式：http://localhost:3003/static/frank.txt
+// 调用方式：http://localhost:3003/static/demo.json

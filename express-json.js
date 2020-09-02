@@ -1,6 +1,13 @@
 let express = require('express');
 let app = express();
 
+let djson = require('./public/demo.json')
+
+app.get('/djson', (req, res) => {
+  res.status(200);
+  res.json(djson);
+});
+
 app.get('/', (req, res) => {
   res.status(200);
   res.json({

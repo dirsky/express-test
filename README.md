@@ -47,7 +47,7 @@ $ pm2 stop [id]           # 停止指定的进程
 $ pm2 restart [id]        # 重启指定的进程
 $ pm2 startup             # 产生 init 脚本 保持进程活着
 $ pm2 web                 # 运行健壮的 computer API endpoint (http://localhost:9615)
-$ pm2 kill [id]           # 杀死指定的进程
+$ pm2 delete [id]           # 杀死指定的进程
 $ pm2 delete all          # 杀死全部进程
 ```
 
